@@ -15,9 +15,9 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
-        android:layout_marginLeft="-4dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginRight="4dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginRight="-5dp"
         android:layout_marginBottom="30dp"
         android:gravity="center"
         android:text="Facebook"
@@ -31,7 +31,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/fb"
         android:layout_alignParentLeft="true"
-        android:layout_marginLeft="35dp"
+        android:layout_marginLeft="38dp"
+        android:layout_marginTop="5dp"
         android:layout_marginRight="20dp"
         android:gravity="center"
         android:padding="2dp"
@@ -44,7 +45,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/acc"
         android:layout_marginLeft="70dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="20dp"
         android:hint="firstname"
         android:textAlignment="center"
         android:background="#ffff"/>
@@ -55,7 +56,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/acc"
         android:layout_marginLeft="30dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="20dp"
         android:layout_toRightOf="@+id/fd"
         android:hint="lastname"
         android:textAlignment="center"
@@ -66,7 +67,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/fd"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="20dp"
         android:hint="mobile number"
         android:textAlignment="center"
         android:background="#ffff"/>
@@ -76,7 +77,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/mb"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="20dp"
         android:ems="10"
         android:hint="new password"
         android:inputType="textPassword"
@@ -88,7 +89,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/np"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="24dp"
         android:text="Date of Birth"
         android:textSize="20sp" />
 
@@ -97,10 +98,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/db"
-        android:layout_marginLeft="20sp"
-        android:layout_marginTop="32dp"
+        android:layout_marginLeft="10sp"
+        android:layout_marginTop="22dp"
         android:backgroundTint="#FFFFFF"
-        android:entries="DATE"
+        android:entries="@array/date"
         android:spinnerMode="dropdown" />
 
     <Spinner
@@ -108,11 +109,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/db"
-        android:layout_marginLeft="99dp"
-        android:layout_marginTop="34dp"
+        android:layout_marginLeft="39dp"
+        android:layout_marginTop="22dp"
         android:layout_toRightOf="@id/spinner1"
         android:backgroundTint="#FFFFFF"
-        android:entries="MONTH"
+        android:entries="@array/month"
         android:spinnerMode="dropdown" />
 
     <Spinner
@@ -120,11 +121,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/db"
-        android:layout_marginLeft="99dp"
-        android:layout_marginTop="34dp"
+        android:layout_marginLeft="39dp"
+        android:layout_marginTop="22dp"
         android:layout_toRightOf="@id/spinner2"
         android:backgroundTint="#FFFFFF"
-        android:entries="YEAR"
+        android:entries="@array/year"
         android:spinnerMode="dropdown" />
 
     <TextView
@@ -155,13 +156,13 @@
             android:id="@+id/fem"/>
 
     </RadioGroup>
-<Button
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_below="@id/gen"
-    android:layout_marginTop="70dp"
-    android:layout_marginLeft="150dp"
-    android:text="Sign Up"
-    />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gen"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="150dp"
+        android:text="Sign Up"
+        />
 
 </RelativeLayout>
